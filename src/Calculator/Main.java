@@ -1,5 +1,9 @@
 package Calculator;
 
+/*  Made by Utkarsh Yadav
+
+ */
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -11,8 +15,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("calculator.fxml"));
-        primaryStage.setTitle("Calculator");
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("calculator.fxml"));
+        Parent root = loader.load();
+                primaryStage.setTitle("Calculator");
         primaryStage.getIcons().add(new Image("Cal.png"));
         primaryStage.setScene(new Scene(root));
         primaryStage.setResizable(false);
