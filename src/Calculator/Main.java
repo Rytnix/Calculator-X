@@ -1,6 +1,6 @@
 package Calculator;
 
-/*  Made by Utkarsh Yadav
+/*  Made by Utkarsh Yadav.
 
  */
 
@@ -17,7 +17,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
         FXMLLoader loader = new FXMLLoader(getClass().getResource("calculator.fxml"));
         Parent root = loader.load();
-                primaryStage.setTitle("Calculator");
+        primaryStage.setTitle("Calculator");
         primaryStage.getIcons().add(new Image("Cal.png"));
         primaryStage.setScene(new Scene(root));
         primaryStage.setResizable(false);
