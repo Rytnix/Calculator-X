@@ -35,6 +35,12 @@ public class Controller {
           stage.show();
 
     }
+    @FXML
+    void OnClickC(ActionEvent event){
+        result_field.setText("");
+        operator = "";
+        num1 =0;
+    }
 
     @FXML
     void Number(ActionEvent event) {
